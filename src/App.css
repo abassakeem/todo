@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@100;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
+
+
+body{
+  font-family: "Bai Jamjuree", sans-serif;
+  
+}
+
+.la-logo{
+  height: 17px;
+}
+
+.navbar-link{
+  color: #fff;
+  font-weight: 700;
+  font-family: "Syncopate", sans-serif;
+  text-transform: uppercase;
+}
+.welcome-text{
+  font-size: 1em;
+  font-family: "Poppins" ,sans-serif;
+  font-weight: 600;
+}
+ul{
+  list-style: none;
+ 
+}
+.social-icon a{
+ 
+  margin-right: 20px;
+  font-weight: 900;
+  color:#fff;
+  position: relative;
+  cursor: pointer;
+  
+
+}
+
+
+.social-icon a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff ;
+  transform: scaleX(0);
+  transform-origin: right ;
+  transition: transform 240ms ease-in;
+ 
+}
+.social-icon a:hover::after{
+  transform: scaleX(1);
+  transform-origin:left ;
+ 
+}
+
+.hero-text{
+  font-size: 1.8em;
+  font-weight: 700;
+
+}
+.hero-sub-text{
+  font-size: 10px;
+  
+}
+.carousel-caption{
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.project-left{
+ font-size: 0.75em;
+
+}
+
+.description{
+ 
+}
+
+.curved-tv {
+
+  overflow: hidden;
+  position: relative;
+}
+
+.curved-tv img {
+  width: 100%;
+  height: auto;
+
+  
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3)
+}
+
+.git-view{
+  font-size: 25px;
+}
+
+.carousel-control-prev {
+  bottom: 0;
+  top: unset;
+  transform: translateX(-50%); /* Horizontally center the previous button */
+  left: 50px; /* Adjust the left position for the previous button */
+  margin-right: 30px; /* Add a fixed margin between the buttons */
+}
+
+.carousel-control-next {
+  bottom: 0;
+  top: unset;
+  transform: translateX(-50%); /* Horizontally center the next button */
+  right: 50px; /* Adjust the right position for the next button */
+  margin-left: 30px; /* Add a fixed margin between the buttons */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px; /* Adjust the size of the icons as needed */
+  height: 30px; /* Adjust the size of the icons as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for buttons */
+  border-radius: 50%; /* Make them circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: ''; /* Remove default content */
+  color: white; /* Icon color */
+  font-size: 20px; /* Adjust the icon size */
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px; /* Adjust the size of the buttons as needed */
+  height: 30px; /* Adjust the size of the buttons as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for buttons */
+  border-radius: 50%; /* Make them circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -35px; /* Adjust the distance from the bottom */
+}
+
+.carousel-control-prev {
+  left: calc(50% - 45px); /* Adjust the left position for the previous button */
+}
+
+.carousel-control-next {
+  right: calc(50% - 45px); /* Adjust the right position for the next button */
+}
+input{
+  border: 1px solid red  ;
+}
+
+textarea {
+  border: 1px solid #000 !important;
+}
+.name-input, .email-input{
+ border: none;
+ border-bottom: 1px solid #000;
+ border-radius: 0;
+
+}
+.send-button{
+  width: 150px;
+  margin: 0 auto;
+}
