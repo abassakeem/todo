@@ -22,9 +22,81 @@ import { BiLogoReact } from 'react-icons/bi'
 import { FaNodeJs } from 'react-icons/fa'
 import { Col, Container, Row } from 'react-bootstrap'
 
+
+
+import reactbootstrap from "./../assets/tech/reactbootstrap.svg";
+import css from "./../assets/tech/css.png";
+
+import figma from "./../assets/tech/figma.png";
+import git from "./../assets/tech/git.png";
+import html from "./../assets/tech/html.png";
+import javascript from "./../assets/tech/javascript.png";
+
+import nodejs from "./../assets/tech/nodejs.png";
+import reactjs from "./../assets/tech/reactjs.png";
+
+import illustrator from "./../assets/tech/illustrator.svg";
+import tailwind from "./../assets/tech/tailwind.png";
+import typescript from "./../assets/tech/typescript.png";
+import threejs from "./../assets/tech/threejs.svg";
+
 export default function About() {
+    const technologies = [
+        {
+            name: "HTML 5",
+            icon: html,
+        },
+        {
+            name: "CSS 3",
+            icon: css,
+        },
+
+        {
+            name: "JavaScript",
+            icon: javascript,
+        },
+
+        {
+            name: "React JS",
+            icon: reactjs,
+        }, {
+            name: "TypeScript",
+            icon: typescript,
+        },
+
+        {
+            name: "React Bootstrap",
+            icon: reactbootstrap,
+        },
+        {
+            name: "Tailwind CSS",
+            icon: tailwind,
+        },
+        {
+            name: "Node JS",
+            icon: nodejs,
+        },
+        {
+            name: "Adobe illustrator",
+            icon: illustrator,
+        },
+
+        {
+            name: "Three JS",
+            icon: threejs,
+        },
+        {
+            name: "git",
+            icon: git,
+        },
+        {
+            name: "figma",
+            icon: figma,
+        },
+
+    ];
     return (
-        <div className=' about-section vh-100 bg-secondary d-flex justify-content-center align-items-center'>
+        <div className=' about-section vh-100 text-light d-flex justify-content-center align-items-center'>
 
             <Container >
                 <div >
@@ -78,84 +150,101 @@ export default function About() {
                                         duration: 1,
                                         delay: 0.5,
                                     }}
-                                ><i>"I am a computer science graduate from Babcock University, with my primary focus being on frontend development using React and Three.js. However, I also have a strong fascination with Node.js, and the intricate world of cloud engineering."</i></motion.span>
+                                ><i className=" text-justify">"I am a computer science graduate from Babcock University, with my primary focus being on frontend development using React and Three.js. However, I also have a strong fascination with Node.js, and the intricate world of cloud engineering."</i></motion.span>
                                 <ul className="unordered d-flex flex-row mt-3 text-center">
                                     <li className=''>
-                                        
-                                            <motion.span
-                                                initial={{
-                                                    opacity: 0,
-                                                    y: 25,
-                                                }}
-                                                whileInView={{
-                                                    opacity: 1,
-                                                    y: 0,
-                                                }}
-                                                transition={{
-                                                    duration: 1,
-                                                    delay: 0.9,
-                                                }}
-                                                className="tech-logo tech-logo1">
-                                                <BiLogoReact />
-                                            </motion.span>
-                                       
 
-                                        <p className="about-text"><small>Proficient in front-end technologies including React.js, HTML, CSS, and Bootstrap, complemented by strong skills in JavaScript.</small></p>
+                                        <motion.span
+                                            initial={{
+                                                opacity: 0,
+                                                y: 25,
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                y: 0,
+                                            }}
+                                            transition={{
+                                                duration: 1,
+                                                delay: 0.9,
+                                            }}
+                                            className="tech-logo tech-logo1">
+                                            <BiLogoReact />
+                                        </motion.span>
 
-                                    </li>
-                                    <li>
-                                        
-                                            <motion.span
-                                                initial={{
-                                                    opacity: 0,
-                                                    y: 25,
-                                                }}
-                                                whileInView={{
-                                                    opacity: 1,
-                                                    y: 0,
-                                                }}
-                                                transition={{
-                                                    duration: 1,
-                                                    delay: 1.15,
-                                                }}
-                                                className="tech-logo2 tech-logo">
-                                                <FaNodeJs />
-                                            </motion.span>
-                                      
 
-                                        <p className="about-text"><small>Well-versed in back-end development with experience in Node.js, PHP, and database optimization.</small></p>
+                                        <p className="about-text text-secondary"><small>Proficient in front-end technologies including React.js, HTML, CSS, and Bootstrap, complemented by strong skills in JavaScript.</small></p>
 
                                     </li>
                                     <li>
-                                        
-                                            <motion.span
-                                                initial={{
-                                                    opacity: 0,
-                                                    y: 25,
-                                                }}
-                                                whileInView={{
-                                                    opacity: 1,
-                                                    y: 0,
-                                                }}
-                                                transition={{
-                                                    duration: 1,
-                                                    delay: 1,
-                                                }}
-                                                className="tech-logo tech-logo3">
-                                                <AiFillGithub />
-                                            </motion.span>
-                                        
 
-                                        <p className="about-text"><small>I have a strong background in using Git and GitHub for continuous integration and deployment of software.</small></p>
+                                        <motion.span
+                                            initial={{
+                                                opacity: 0,
+                                                y: 25,
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                y: 0,
+                                            }}
+                                            transition={{
+                                                duration: 1,
+                                                delay: 1.15,
+                                            }}
+                                            className="tech-logo2 tech-logo">
+                                            <FaNodeJs />
+                                        </motion.span>
+
+
+                                        <p className="about-text text-secondary"><small>Well-versed in back-end development with experience in Node.js, PHP, and database optimization.</small></p>
+
+                                    </li>
+                                    <li>
+
+                                        <motion.span
+                                            initial={{
+                                                opacity: 0,
+                                                y: 25,
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                y: 0,
+                                            }}
+                                            transition={{
+                                                duration: 1,
+                                                delay: 1,
+                                            }}
+                                            className="tech-logo tech-logo3">
+                                            <AiFillGithub />
+                                        </motion.span>
+
+
+                                        <p className="about-text text-secondary"><small>I have a strong background in using Git and GitHub for continuous integration and deployment of software.</small></p>
 
 
                                     </li>
 
                                 </ul>
 
-                            </Col>
+                            </Col>  
+                             </Row>
+                            <div >
+                                <div className=" mt-5  header-tech text-center section-header">
+                                    <h4>Tech</h4>
+                                    <small className="text-secondary">Some of the technologies I have experience with include</small>
+                                </div>
+                                <div className='mt-2 text-center  d-flex  flex- justify-content-center align-items-center gap-3 '>
 
-                        </Row>
+                                    {technologies.map((technology) => (
+                                        <div className='tech-img-container' key={technology.name}>
+                                            <img src={technology.icon} className='tech-img' />
+                                            <p className='tech-name d-none d-sm-block'>{technology.name}</p>
+                                        </div>
+                                    ))}
+                                </div>
+
+                            </div>
+
+                     
 
 
                     </Row>

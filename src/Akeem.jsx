@@ -15,6 +15,10 @@ export default function Model(props) {
     actions.stand.play()
   })
 
+
+
+  
+
   
   return (
     <mesh  position={[0, -1.55, -1.5]}>

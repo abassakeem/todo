@@ -184,6 +184,9 @@ ul {
   font-size: 20px;
   /* Adjust the icon size */
 }
+.about-section {
+  background-color: #2A2C25;
+}
 .about-text{
   line-height:1.1em;
   text-align: center;
@@ -339,9 +342,30 @@ textarea {
 }
 
 
+.tech-img-container{
+  animation: move 5s  infinite alternate;
+  overflow: hidden;
+}
 
+.tech-img{
+  height: 30px;
+  transition: 0.5s;
+  
+}
+.tech-img:hover{
+  height: 28px;
+  
+}
 
+.tech-name{
+  font-size: 8px;
+  text-align: center;
+  place-items: center;
 
+}
+@keyframes move {
+ 
+}
 
 
 
@@ -377,4 +401,44 @@ textarea {
     font-size: 13px;
     margin-bottom: 15px;
   }
+  .tech-img-container{
+    animation: move 5s  infinite alternate;
+    overflow: hidden;
+  }
+  
+  .tech-img{
+    height: 15px;
+    transition: 0.5s;
+    
+  }
+  .tech-img:hover{
+    height: 14px;
+    
+  }
+  
+  .tech-name{
+    font-size: 5px;
+    text-align: center;
+    place-items: center;
+  
+  }
+}
+
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader img {
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
 }

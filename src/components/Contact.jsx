@@ -124,7 +124,7 @@ export default function Contact() {
 
       <Button
         type="submit"
-        variant="primary"
+        variant="dark"
         className="py-3 px-4 rounded-xl border-0 font-bold send-button "
       >
         {loading ? "Sending..." : "Send"}
