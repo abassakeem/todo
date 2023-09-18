@@ -29,9 +29,9 @@ export default function Avatar() {
 
     
      
-    <Suspense fallback={CanvasLoader}>
+    <Suspense fallback={<CanvasLoader/>}>
       <Akeem/>
-
+      
     </Suspense>
       
        <ambientLight intensity={0.2}/>
