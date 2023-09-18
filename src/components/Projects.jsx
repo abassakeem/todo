@@ -22,14 +22,16 @@ export default function Projects() {
             image: pastquest,
             git: "https://github.com/abassakeem/PastQuest",
             description: "I built a quiz app with randomized questions on each restart, providing a dynamic experience. After finishing the quiz, users receive a detailed score breakdown and corrections to review their performance and learn from their mistakes.",
+            tech:["#React","#CSS","#Bootstrap"]
         },
         {
             index: 9,
             title: "Apple 3d Website Clone",
             url: "https://appleabass.netlify.app",
             image: apple,
-            git: "https://github.com/apple-landing-page/PastQuest",
+            git: "https://github.com/apple-landing-page",
             description: "A meticulously crafted clone of Apple's  website. Leveraging advanced technologies such as 3D animation, React, WebGL, and Framer Motion, I meticulously replicated Apple's web presence with finesse and precision. .",
+            tech:["#React","#CSS","#React-Three-Fiber","#Bootstrap"]
         },
 
         {
@@ -39,6 +41,7 @@ export default function Projects() {
             image: port,
             git: "https://github.com/abassakeem/wuwaabassportfolio",
             description: "I designed a portfolio website inspired by Wuwa Sensei, incorporating Three.js for 3D elements, animations, and Framer Motion to create an immersive and visually captivating experience.",
+            tech:["#React","#CSS","#TailwindCSS","#Blender"]
         },
 
         {
@@ -48,6 +51,7 @@ export default function Projects() {
             image: budget,
             git: "https://github.com/abassakeem/budget-tracker",
             description: "I developed a budget management application with an integrated pie chart, enabling users to calculate their budget and expenses easily. The intuitive visualization allows for a quick assessment of whether they are within or exceeding their budget.",
+            tech:["#React","#CSS","#Bootstrap"]
         },
 
 
@@ -58,6 +62,7 @@ export default function Projects() {
             image: hangman,
             git: "https://github.com/abassakeem/hangman",
             description: "My Hangman game project, where React and TypeScript seamlessly come together to create an interactive word-guessing game. Players guess letters to uncover a hidden word while enjoying the suspense of avoiding incorrect guesses. This project highlights my skills in React development and the robustness of TypeScript.",
+            tech:["#React","#Typescript","#CSS","#Bootstrap"]
         },
         {
             index: 8,
@@ -66,6 +71,7 @@ export default function Projects() {
             image: texttospeech,
             git: "https://github.com/abassakeem/text-to-speech",
             description: "I created a text-to-speech tool by harnessing the React-Speech API. This tool empowers users to input text, select from a variety of voices, and then seamlessly convert it into spoken language.",
+            tech:["#React","#API","#CSS","#Bootstrap"]
         },
         {
             index: 6,
@@ -74,6 +80,7 @@ export default function Projects() {
             image: todo,
             git: "https://github.com/abassakeem/todo-app",
             description: "I created a user-friendly To-Do List app using React, enabling easy task management. It offers task creation, completion, and removal, enhancing productivity and organization.",
+            tech:["#React","#CSS","#Bootstrap"]
         },
         {
             index: 7,
@@ -82,6 +89,7 @@ export default function Projects() {
             image: guess,
             git: "https://github.com/abassakeem/GuessTheNumber",
             description: "I developed a number guessing game where users have 5 attempts to guess a randomly generated number between 1 and 100. Success occurs if they guess correctly within the allotted tries, while failure results from an incorrect guess.",
+            tech:["#React","#CSS","#Bootstrap"]
         },
         {
             index: 2,
@@ -90,6 +98,7 @@ export default function Projects() {
             image: wwtbam,
             git: "https://github.com/abassakeem/who-wants-to-be-a-millionaire",
             description: "I designed and built a fully functional Who Wants to Be a Millionaire game clone using React, featuring authentic sound effects to enhance the user experience.",
+            tech:["#React","#CSS","#Bootstrap"]
         },
 
 
@@ -147,9 +156,8 @@ export default function Projects() {
                                                         <Image src={project.image} alt="project-img" fluid />
 
                                                     </div>
-                                                    <span>#react</span>
-                                                    <span>#css</span>
-                                                    <span>#bootstrap</span>
+                                                    <span className='text-muted project-tech-tags'>{project.tech} </span>
+                                                   
                                                 </div>
 
                                             </div>

@@ -33,7 +33,7 @@ export default function Hero() {
              }}
              transition={{
                duration: 1,
-               delay: 2,
+               delay: 1,
              }}
             className="hero-text text-light">LANRE-ABASS AKEEM</motion.p>
             <span className="description hero-sub-text">
