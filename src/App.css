@@ -5,84 +5,118 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
 
 
-body{
+body {
   font-family: "Bai Jamjuree", sans-serif;
-  
-}
 
-.la-logo{
+}
+.section-header{
+  font-weight: 600;
+}
+.la-logo {
   height: 17px;
 }
 
-.navbar-link{
+.navbar-link {
   color: #fff;
   font-weight: 700;
   font-family: "Syncopate", sans-serif;
   text-transform: uppercase;
+  position: relative ;
 }
-.welcome-text{
+.navbar-link:hover{
+  color: grey;
+}
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 240ms ease-in;
+
+}
+
+.navbar-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+
+.welcome-text {
   font-size: 1em;
-  font-family: "Poppins" ,sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
-ul{
+
+ul {
   list-style: none;
- 
+
 }
-.social-icon a{
- 
+
+.social-icon a {
+
   margin-right: 20px;
   font-weight: 900;
-  color:#fff;
+  color: #fff;
   position: relative;
   cursor: pointer;
-  
+
 
 }
 
 
-.social-icon a::after{
+.social-icon a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -3px;
   width: 100%;
   height: 1px;
-  background-color: #ffffff ;
+  background-color: #ffffff;
   transform: scaleX(0);
-  transform-origin: right ;
+  transform-origin: right;
   transition: transform 240ms ease-in;
- 
+
 }
-.social-icon a:hover::after{
+
+.social-icon a:hover::after {
   transform: scaleX(1);
-  transform-origin:left ;
- 
+  transform-origin: left;
+
 }
 
-.hero-text{
-  font-size: 1.8em;
+.hero-text {
+  font-size: 2.5em;
   font-weight: 700;
+  
 
 }
-.hero-sub-text{
+
+.hero-sub-text {
   font-size: 10px;
-  
+
 }
-.carousel-caption{
+.unordered h5{
+  font-weight: 300;
+}
+
+.carousel-caption {
   position: relative;
   right: 0;
   bottom: 0;
   left: 0;
 }
-.project-left{
- font-size: 0.75em;
+
+.project-left {
+  font-size: 0.75em;
 
 }
 
-.description{
- 
-}
+
 
 .curved-tv {
 
@@ -94,84 +128,253 @@ ul{
   width: 100%;
   height: auto;
 
-  
+
 
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3)
 }
 
-.git-view{
+.git-view {
   font-size: 25px;
 }
 
 .carousel-control-prev {
   bottom: 0;
   top: unset;
-  transform: translateX(-50%); /* Horizontally center the previous button */
-  left: 50px; /* Adjust the left position for the previous button */
-  margin-right: 30px; /* Add a fixed margin between the buttons */
+  transform: translateX(-50%);
+  /* Horizontally center the previous button */
+  left: 50px;
+  /* Adjust the left position for the previous button */
+  margin-right: 30px;
+  /* Add a fixed margin between the buttons */
 }
 
 .carousel-control-next {
   bottom: 0;
   top: unset;
-  transform: translateX(-50%); /* Horizontally center the next button */
-  right: 50px; /* Adjust the right position for the next button */
-  margin-left: 30px; /* Add a fixed margin between the buttons */
+  transform: translateX(-50%);
+  /* Horizontally center the next button */
+  right: 50px;
+  /* Adjust the right position for the next button */
+  margin-left: 30px;
+  /* Add a fixed margin between the buttons */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 30px; /* Adjust the size of the icons as needed */
-  height: 30px; /* Adjust the size of the icons as needed */
-  background-color: rgba(0, 0, 0, 0.5); /* Background color for buttons */
-  border-radius: 50%; /* Make them circular */
+  width: 30px;
+  /* Adjust the size of the icons as needed */
+  height: 30px;
+  /* Adjust the size of the icons as needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Background color for buttons */
+  border-radius: 50%;
+  /* Make them circular */
   display: flex;
   justify-content: center;
+  padding: 10px;
   align-items: center;
 }
 
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
-  content: ''; /* Remove default content */
-  color: white; /* Icon color */
-  font-size: 20px; /* Adjust the icon size */
+  content: '';
+  /* Remove default content */
+  color: white;
+  /* Icon color */
+  font-size: 20px;
+  /* Adjust the icon size */
+}
+.about-text{
+  line-height:1.1em;
+  text-align: center;
+  font-size: 0.8em;
+
 }
 
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 30px; /* Adjust the size of the buttons as needed */
-  height: 30px; /* Adjust the size of the buttons as needed */
-  background-color: rgba(0, 0, 0, 0.5); /* Background color for buttons */
-  border-radius: 50%; /* Make them circular */
+  width: 30px;
+  /* Adjust the size of the buttons as needed */
+  height: 30px;
+  /* Adjust the size of the buttons as needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Background color for buttons */
+  border-radius: 50%;
+  /* Make them circular */
   display: flex;
+
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -35px; /* Adjust the distance from the bottom */
+  bottom: -35px;
+  /* Adjust the distance from the bottom */
 }
 
 .carousel-control-prev {
-  left: calc(50% - 45px); /* Adjust the left position for the previous button */
+  left: calc(50% - 45px);
+  /* Adjust the left position for the previous button */
 }
 
 .carousel-control-next {
-  right: calc(50% - 45px); /* Adjust the right position for the next button */
+  right: calc(50% - 45px);
+  /* Adjust the right position for the next button */
 }
-input{
-  border: 1px solid red  ;
+
+input {
+  border: 1px solid red;
 }
 
 textarea {
   border: 1px solid #000 !important;
 }
-.name-input, .email-input{
- border: none;
- border-bottom: 1px solid #000;
- border-radius: 0;
+
+.name-input,
+.email-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
 
 }
-.send-button{
+
+.send-button {
   width: 150px;
   margin: 0 auto;
+}
+
+.stage-cube-cont {
+
+  width: 100px;
+  height: 100px;
+
+
+}
+
+.cubespinner {
+  
+
+  text-align: center;
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 25px 25px 0;
+
+}
+
+
+.face {
+  margin-top: 20px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  background: rgba(33, 33, 33, 0.2);
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px lightyellow;
+}
+
+.face1 {
+  transform: translateZ(50px);
+  color: #dd0031;
+}
+
+.face2 {
+  transform: rotateY(90deg) translateZ(50px);
+  color: #f06529;
+}
+
+.face3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+  color: #28a4d9;
+}
+
+.face4 {
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+  color: #5ed4f4;
+}
+
+.face5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+  color: #efd81d;
+}
+
+.face6 {
+  transform: rotateX(-90deg) translateZ(50px);
+  color: #ec4d28;
+}
+
+
+@keyframes spincube {
+
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  16% {
+    transform: rotateY(-90deg);
+  }
+
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+.tech-logo1 {
+  color: #61dbfb;
+  font-size: 16px;
+}
+
+.tech-logo2 {
+  color: #F0DB4F;
+  font-size: 16px;
+}
+
+.tech-logo3 {
+  color: #171515;
+  font-size: 16px; 
+  padding: 5px;
+  margin-bottom: 7px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .navbar-link{
+    font-size: 11px;
+  }
+  .hero-text{
+    font-size: 1.5em;
+  }
+  .about-description {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
 }

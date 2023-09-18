@@ -13,8 +13,8 @@ export default function Hero() {
   );
   return (
 
-    <div>
-<Container fluid className="vh-100 d-flex justify-content-center align-items-center bg-dark m-0 p-0">
+    <div className="vh-100 bg-dark">
+<Container  className="vh-100 d-flex justify-content-center align-items-center  ">
 
     <Row>
         <Col xs={6}>
@@ -39,13 +39,13 @@ export default function Hero() {
             <span className="description hero-sub-text">
                I develop sexy webpages 
                <br/>
-               <small>.....I play with three js too ;)</small>
+               <small >.....I play with three js too ;)</small>
             </span>
-            <ul className="links text-center mt-2">
+            <ul className="links text-center mt-2 ">
                <div className="  connect-links d-flex justify-content-center align-items-center gap-3 text-center">
 
                
-                <li className="social-icon">
+                <li className="social-icon ">
                     <a className="" href="https://github.com/abassakeem" target="_blank"> <AiFillGithub/></a>
                  </li>
                  <li className="social-icon">

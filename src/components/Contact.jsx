@@ -72,16 +72,17 @@ export default function Contact() {
     };
   
   return (
-    <div className='vh-100'>
+    <div className='vh-100 contact-section'>
 <Container  className="mt-12 d-flex  gap-10 overflow-hidden">
   <Col
-    xs={4}
+    xs={12}
+    md={6}
     
     className="bg-white p-4 p-md-5 rounded-2xl"
    
   >
     <p className="text-muted font-medium-lg text-lg text-md-26 text-sm-20 text-xs-16">Get in touch</p>
-    <h3 className="text-dark font-weight-bold md-text-60 sm-text-50 xs-text-40 text-30">Contact.</h3>
+    <h1 className="section-header font-weight-bold md-text-60 sm-text-50 xs-text-40 text-30">Contact.</h1>
 
     <Form onSubmit={handleSubmit} className="mt-4 mt-md-5 d-flex flex-column gap-4">
       <Form.Group>
@@ -132,8 +133,10 @@ export default function Contact() {
   </Col>
 
   <Col
-    xs={6}
-    className=""
+    xs={12}
+    sm={12}
+    md={6}
+    className="d-none d-md-block"
 
   >
     <Waving/>

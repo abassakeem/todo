@@ -107,11 +107,11 @@ export default function Projects() {
     };
 
     return (
-        <div className='vh-100 bg-warning d-flex justify-content-center align-items-center'>
+        <div className='projects-section vh-100 bg-warning d-flex justify-content-center align-items-center'>
 
             <Container >
                 <div >
-                    <h1 className='text-center'>Projects</h1>
+                    <h1 className='text-center section-header'>Projects</h1>
                     <Row>
                         <Carousel>
                             {projects.map(project => (

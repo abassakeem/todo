@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import About from './components/About';
+import StarsCanvas from './components/Stars';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +18,7 @@ function App() {
     <About/>
      <Projects/>
         <Contact />
+        
      
        </div>
   

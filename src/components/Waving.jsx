@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 
-import Wave from './../Wave'
+import Earth from './../Earth'
 
 
 import { OrbitControls, Preload } from '@react-three/drei'
@@ -9,20 +9,22 @@ import CanvasLoader from './Loader'
 export default function Waving() {
   return (
    
-<div className="vh-100 bg-dark">
+<div className="vh-100 ">
  
 <Canvas
 
       shadows
+      frameloop="demand"
       dpr={[1, 2]}
-      camera={{ position: [1, 4.24, 8.9], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      camera={{ position: [-9.679, 1.54, 17.39], fov: 32 , near:0.1, far:200}}
+      gl={{ preserveDrawingBuffer: true }
+       
+    }
+      
      
 >
   
-      <OrbitControls enableZoom={false}
-       
-      />
+      
     <directionalLight intensity={1}/>
    
        <pointLight intensity={1} />
@@ -30,7 +32,14 @@ export default function Waving() {
     
      
     <Suspense fallback={CanvasLoader}>
-      <Wave/>
+      <Earth/>
+      <OrbitControls 
+      autoRotate
+      enableZoom={false}
+      maxPolarAngle={Math.PI / 2}
+      minPolarAngle={Math.PI /2}
+       
+      />
 
     </Suspense>
       
