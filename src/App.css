@@ -266,7 +266,7 @@ ul {
   /* Adjust the size of the icons as needed */
   height: 30px;
   /* Adjust the size of the icons as needed */
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   /* Background color for buttons */
   border-radius: 50%;
   /* Make them circular */
@@ -286,7 +286,7 @@ ul {
   /* Adjust the icon size */
 }
 .about-section {
-  background-color: #2A2C25;
+  background-color: #4d5142;
 }
 .about-text{
   line-height:1.1em;
@@ -303,7 +303,7 @@ ul {
   /* Adjust the size of the buttons as needed */
   height: 30px;
   /* Adjust the size of the buttons as needed */
-  background-color: rgba(0, 0, 0, 0.5);
+ 
   /* Background color for buttons */
   border-radius: 50%;
   /* Make them circular */

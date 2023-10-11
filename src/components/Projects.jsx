@@ -11,6 +11,7 @@ import texttospeech from "./../assets/projects/texttospeech.png"
 import todo from "./../assets/projects/todo.png"
 import guess from "./../assets/projects/guess.png"
 import wwtbam from "./../assets/projects/wwtbam.png"
+import getlinked from "./../assets/projects/getlinked.png"
 import { AiFillGithub, AiFillEye } from 'react-icons/ai'
 export default function Projects() {
 
@@ -36,8 +37,17 @@ export default function Projects() {
 
         {
             index: 4,
+            title: "GetLinked",
+            url: "https://www.getlinkedd.netlify.app",
+            image: getlinked,
+            git: "https://github.com/abassakeem/getlinked",
+            description: "I designed a landing page for 'getlink' which utilizes an API to retrieve the necessary data required for the registration process.",
+            tech:["#React","#CSS","#Bootstrap","#Api"]
+        },
+        {
+            index: 5,
             title: "My Portfolio",
-            url: "https://www.youtube.com/watch?v=zwNF1-lsia8",
+            url: "https://wuwaabassportfolio.netlify.app/",
             image: port,
             git: "https://github.com/abassakeem/wuwaabassportfolio",
             description: "I designed a portfolio website inspired by Wuwa Sensei, incorporating Three.js for 3D elements, animations, and Framer Motion to create an immersive and visually captivating experience.",
@@ -116,7 +126,7 @@ export default function Projects() {
     };
 
     return (
-        <div className='projects-section vh-100 bg-warning d-flex justify-content-center align-items-center'>
+        <div className='projects-section vh-100 bg-dark d-flex justify-content-center align-items-center'>
 
             <Container >
                 <div >
