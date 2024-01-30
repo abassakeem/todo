@@ -7,6 +7,7 @@ import apple from "./../assets/projects/apple.png"
 import port from "./../assets/projects/portfolio.png"
 import budget from "./../assets/projects/budget.png"
 import hangman from "./../assets/projects/hangman.png"
+import bupower from "./../assets/projects/bupower.png"
 import texttospeech from "./../assets/projects/texttospeech.png"
 import todo from "./../assets/projects/todo.png"
 import guess from "./../assets/projects/guess.png"
@@ -73,6 +74,15 @@ export default function Projects() {
             git: "https://github.com/abassakeem/hangman",
             description: "My Hangman game project, where React and TypeScript seamlessly come together to create an interactive word-guessing game. Players guess letters to uncover a hidden word while enjoying the suspense of avoiding incorrect guesses. This project highlights my skills in React development and the robustness of TypeScript.",
             tech:["#React","#Typescript","#CSS","#Bootstrap"]
+        },
+        {
+            index: 9,
+            title: "BU-POWER",
+            url: "https://github.com/abassakeem/BabcockPower",
+            image: bupower,
+            git: "https://github.com/abassakeem/BabcockPower",
+            description: "My Hangman game project, where React and TypeScript seamlessly come together to create an interactive word-guessing game. Players guess letters to uncover a hidden word while enjoying the suspense of avoiding incorrect guesses. This project highlights my skills in React development and the robustness of TypeScript.",
+            tech:["#HTML","#CSS","#JavaScript","PHP","#Bootstrap"]
         },
         {
             index: 8,
