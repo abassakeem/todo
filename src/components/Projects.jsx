@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-
+import logo from "./../assets/la-dark.png"
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import pastquest from "./../assets/projects/pastquest.png"
 import apple from "./../assets/projects/apple.png"
