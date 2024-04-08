@@ -9,7 +9,7 @@ import CanvasLoader from './Loader'
 export default function Avatar() {
   return (
    
-<div className="vh-100 bg-dark">
+<div className="vh-100 w-100 avatar-container ">
  
 <Canvas
 

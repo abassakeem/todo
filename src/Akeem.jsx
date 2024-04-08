@@ -24,7 +24,7 @@ export default function Model(props) {
     <mesh  position={[0, -1.55, -1.5]}>
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <group name="Armature002" rotation={[Math.PI / 2, 0, 0]}
+        <group name="Armature002" rotation={[Math.PI / 2, 0, 0.2]}
          
         >
           <primitive object={nodes.mixamorigHips} 

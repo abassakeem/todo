@@ -4,16 +4,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
 
-
 body {
   font-family: "Bai Jamjuree", sans-serif;
-
 }
-.section-header{
+.section-header {
   font-weight: 600;
+  font-size: 3em;
+  text-align: center;
 }
 .la-logo {
-  height: 17px;
+  height: 34px;
 }
 
 .navbar-link {
@@ -21,11 +21,15 @@ body {
   font-weight: 700;
   font-family: "Syncopate", sans-serif;
   text-transform: uppercase;
-  position: relative ;
+  position: relative;
 }
-.navbar-link:hover{
+.navbar-link:active {
+  color: grey !important;
+}
+.navbar-link:hover {
   color: grey;
 }
+
 .navbar-link::after {
   content: "";
   position: absolute;
@@ -37,40 +41,44 @@ body {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 240ms ease-in;
-
 }
 
 .navbar-link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-
 }
-.left{
+.left {
   z-index: -999;
 }
 
 .welcome-text {
-  font-size: 1em;
+  font-size: 2em;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
+.hero-text {
+  font-size: 3.5em;
+  font-weight: 700;
+  width: max-content;
+}
+
+.hero-sub-text {
+  font-size: 10px;
+}
+
 ul {
   list-style: none;
-
 }
 
 .social-icon a {
-
-  margin-right: 20px;
+  margin-right: 40px;
   font-weight: 900;
-  color: #fff;
+  color: #000;
   position: relative;
   cursor: pointer;
-
-
+  font-size: 1.5em;
 }
-
 
 .social-icon a::after {
   content: "";
@@ -79,36 +87,29 @@ ul {
   bottom: -3px;
   width: 100%;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #fc8415;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 240ms ease-in;
+}
 
+.social-icon a:hover {
+  color: #fc8415;
 }
 
 .social-icon a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-
 }
 
-.hero-text {
-  font-size: 2.5em;
-  font-weight: 700;
-  
-
-}
-
-.hero-sub-text {
-  font-size: 10px;
-
-}
-.unordered h5{
+.unordered h5 {
   font-weight: 300;
 }
 
-
-
+.avatar-container {
+  cursor: pointer;
+  z-index: 99999999;
+}
 
 .canvas-loader {
   font-size: 10px;
@@ -198,10 +199,6 @@ ul {
   }
 }
 
-
-
-
-
 .carousel-caption {
   position: relative;
   right: 0;
@@ -211,16 +208,13 @@ ul {
 
 .project-left {
   font-size: 0.75em;
-
 }
 
-.project-tech-tags{
+.project-tech-tags {
   font-size: 9px;
 }
 
-
 .curved-tv {
-
   overflow: hidden;
   position: relative;
 }
@@ -228,15 +222,174 @@ ul {
 .curved-tv img {
   width: 100%;
   height: auto;
-
-
-
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3)
+  border-radius: 10px;
 }
 
 .git-view {
   font-size: 25px;
 }
+
+
+
+
+.stage-cube-cont {
+  width: 200px;
+  height: 200px;
+}
+
+.cubespinner {
+  text-align: center;
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 75px 75px 0;
+}
+
+.face {
+  margin-top: 20px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background: rgba(33, 33, 33, 0.2);
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px lightyellow;
+}
+
+.face1 {
+  transform: translateZ(100px);
+  color: #dd0031;
+}
+
+.face2 {
+  transform: rotateY(90deg) translateZ(100px);
+  color: #f06529;
+}
+
+.face3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  color: #28a4d9;
+}
+
+.face4 {
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  color: #5ed4f4;
+}
+
+.face5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  color: #efd81d;
+}
+
+.face6 {
+  transform: rotateX(-90deg) translateZ(100px);
+  color: #ec4d28;
+}
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  16% {
+    transform: rotateY(-90deg);
+  }
+
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+.tech-img-container {
+  animation: move 5s infinite alternate;
+  overflow: hidden;
+}
+
+.tech-img {
+  height: 30px;
+  transition: 0.5s;
+}
+.tech-img:hover {
+  height: 28px;
+}
+
+.tech-name {
+  font-size: 8px;
+  text-align: center;
+  place-items: center;
+}
+@keyframes move {
+}
+
+.tech-logo1 {
+  color: #61dbfb;
+  font-size: 16px;
+}
+
+.tech-logo2 {
+  color: #f0db4f;
+  font-size: 16px;
+}
+
+.tech-logo3 {
+  color: #171515;
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+  .navbar-link {
+    font-size: 11px;
+  }
+  .hero-text {
+    font-size: 1.5em;
+  }
+  .about-description {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .tech-img-container {
+    animation: move 5s infinite alternate;
+    overflow: hidden;
+  }
+
+  .tech-img {
+    height: 15px;
+    transition: 0.5s;
+  }
+  .tech-img:hover {
+    height: 14px;
+  }
+
+  .tech-name {
+    font-size: 5px;
+    text-align: center;
+    place-items: center;
+  }
+}
+
+
+
 
 .carousel-control-prev {
   bottom: 0;
@@ -278,7 +431,7 @@ ul {
 
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
-  content: '';
+  content: "";
   /* Remove default content */
   color: white;
   /* Icon color */
@@ -286,16 +439,12 @@ ul {
   /* Adjust the icon size */
 }
 .about-section {
-  background-color: #4d5142;
 }
-.about-text{
-  line-height:1.1em;
+.about-text {
+  line-height: 1.1em;
   text-align: center;
   font-size: 0.8em;
-
 }
-
-
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -303,7 +452,7 @@ ul {
   /* Adjust the size of the buttons as needed */
   height: 30px;
   /* Adjust the size of the buttons as needed */
- 
+
   /* Background color for buttons */
   border-radius: 50%;
   /* Make them circular */
@@ -325,6 +474,9 @@ ul {
   right: calc(50% - 45px);
   /* Adjust the right position for the next button */
 }
+.carousel-caption {
+  color: #000;
+}
 
 input {
   border: 1px solid red;
@@ -339,193 +491,12 @@ textarea {
   border: none;
   border-bottom: 1px solid #000;
   border-radius: 0;
-
 }
 
 .send-button {
   width: 150px;
   margin: 0 auto;
 }
-
-.stage-cube-cont {
-
-  width: 100px;
-  height: 100px;
-
-
-}
-
-.cubespinner {
-  
-
-  text-align: center;
-  animation-name: spincube;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 12s;
-  transform-style: preserve-3d;
-  transform-origin: 25px 25px 0;
-
-}
-
-
-.face {
-  margin-top: 20px;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #ccc;
-  background: rgba(33, 33, 33, 0.2);
-  text-align: center;
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20px 0px lightyellow;
-}
-
-.face1 {
-  transform: translateZ(50px);
-  color: #dd0031;
-}
-
-.face2 {
-  transform: rotateY(90deg) translateZ(50px);
-  color: #f06529;
-}
-
-.face3 {
-  transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
-  color: #28a4d9;
-}
-
-.face4 {
-  transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
-  color: #5ed4f4;
-}
-
-.face5 {
-  transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
-  color: #efd81d;
-}
-
-.face6 {
-  transform: rotateX(-90deg) translateZ(50px);
-  color: #ec4d28;
-}
-
-
-@keyframes spincube {
-
-  from,
-  to {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-
-  16% {
-    transform: rotateY(-90deg);
-  }
-
-  33% {
-    transform: rotateY(-90deg) rotateZ(90deg);
-  }
-
-  50% {
-    transform: rotateY(-180deg) rotateZ(90deg);
-  }
-
-  66% {
-    transform: rotateY(-270deg) rotateX(90deg);
-  }
-
-  83% {
-    transform: rotateX(90deg);
-  }
-}
-
-
-.tech-img-container{
-  animation: move 5s  infinite alternate;
-  overflow: hidden;
-}
-
-.tech-img{
-  height: 30px;
-  transition: 0.5s;
-  
-}
-.tech-img:hover{
-  height: 28px;
-  
-}
-
-.tech-name{
-  font-size: 8px;
-  text-align: center;
-  place-items: center;
-
-}
-@keyframes move {
- 
-}
-
-
-
-
-.tech-logo1 {
-  color: #61dbfb;
-  font-size: 16px;
-}
-
-.tech-logo2 {
-  color: #F0DB4F;
-  font-size: 16px;
-}
-
-.tech-logo3 {
-  color: #171515;
-  font-size: 16px; 
-  padding: 5px;
-  margin-bottom: 7px;
-}
-
-
-
-
-@media (max-width: 768px) {
-  .navbar-link{
-    font-size: 11px;
-  }
-  .hero-text{
-    font-size: 1.5em;
-  }
-  .about-description {
-    font-size: 13px;
-    margin-bottom: 15px;
-  }
-  .tech-img-container{
-    animation: move 5s  infinite alternate;
-    overflow: hidden;
-  }
-  
-  .tech-img{
-    height: 15px;
-    transition: 0.5s;
-    
-  }
-  .tech-img:hover{
-    height: 14px;
-    
-  }
-  
-  .tech-name{
-    font-size: 5px;
-    text-align: center;
-    place-items: center;
-  
-  }
-}
-
 
 .preloader {
   position: fixed;
@@ -543,4 +514,20 @@ textarea {
 .preloader img {
   width: 200px; /* Adjust the size as needed */
   height: auto;
+}
+.form-control:focus {
+  border-color: 1px solid gray;
+  box-shadow: none;
+
+}
+.form-select:active {
+  border-color: 1px solid gray !important;
+  box-shadow: none;
+
+}
+
+.form-select:focus-visible {
+  border-color: 1px solid gray !important;
+  box-shadow: none;
+
 }

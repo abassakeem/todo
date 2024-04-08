@@ -7,4 +7,4 @@ export default function Preloader() {
           <img src={gif} alt="Loading..." />
         </div>
       );
-    };
+    }
