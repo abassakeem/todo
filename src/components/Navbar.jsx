@@ -34,7 +34,7 @@ export default function Navigation() {
 
   return (
     <div>
-      <Navbar className="m-0 bg-warning p-0 text-light justify-content-between">
+      <Navbar className="m-0 p-0  justify-content-between navbar-container">
         <Container>
           <Navbar.Brand href="/">
             <Image src={logo} alt="lanre-abass logo" fluid className='la-logo mb-2' />

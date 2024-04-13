@@ -67,11 +67,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="vh-100 contact-section"> <h1 className="section-header ">
+    <div className=" contact-section"> <h1 className="section-header ">
             Contact.
           </h1>
       <Container className="mt-12 d-flex  gap-10 overflow-hidden">
-        <Col xs={12} md={6} className="bg-white p-4 p-md-5 rounded-2xl">
+        <Col xs={12} md={6} className=" p-4 p-md-5 rounded-2xl">
           <p className="text-muted font-medium-lg text-lg text-md-26 text-sm-20 text-xs-16">
             Get in touch
           </p>
@@ -91,7 +91,7 @@ export default function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your name?"
-                className="bg-white py-3 px-4  font-medium name-input"
+                className=" py-3 px-4  font-medium name-input"
               />
             </Form.Group>
 
@@ -105,7 +105,7 @@ export default function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your email?"
-                className="bg-white py-3 px-4   font-medium email-input"
+                className=" py-3 px-4   font-medium email-input"
               />
             </Form.Group>
 
@@ -120,7 +120,7 @@ export default function Contact() {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What you want to say?"
-                className="bg-white py-3 px-4 rounded-lg  font-medium"
+                className=" py-3 px-4 rounded-lg  font-medium"
               />
             </Form.Group>
 

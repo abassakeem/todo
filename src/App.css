@@ -7,6 +7,11 @@
 body {
   font-family: "Bai Jamjuree", sans-serif;
 }
+.navbar-container{
+  border-bottom: 1px solid #f7f7f7;
+  color: #000;
+}
+
 .section-header {
   font-weight: 600;
   font-size: 3em;
@@ -17,7 +22,7 @@ body {
 }
 
 .navbar-link {
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-family: "Syncopate", sans-serif;
   text-transform: uppercase;
@@ -37,7 +42,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #000;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 240ms ease-in;
@@ -49,6 +54,10 @@ body {
 }
 .left {
   z-index: -999;
+}
+
+.hero-section-container{
+  background-color: #fff;
 }
 
 .welcome-text {
@@ -439,6 +448,7 @@ ul {
   /* Adjust the icon size */
 }
 .about-section {
+  background-color: #f8f8f8;
 }
 .about-text {
   line-height: 1.1em;
@@ -478,12 +488,19 @@ ul {
   color: #000;
 }
 
+
+.contact-section{
+  background-color: #f8f8f8;
+}
+
 input {
   border: 1px solid red;
+  background-color: transparent !important;
 }
 
 textarea {
   border: 1px solid #000 !important;
+  background-color: transparent !important;
 }
 
 .name-input,
