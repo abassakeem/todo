@@ -86,7 +86,7 @@ export default function Projects() {
       image: bupower,
       git: "https://github.com/abassakeem/BabcockPower",
       description:
-        "My Hangman game project, where React and TypeScript seamlessly come together to create an interactive word-guessing game. Players guess letters to uncover a hidden word while enjoying the suspense of avoiding incorrect guesses. This project highlights my skills in React development and the robustness of TypeScript.",
+        "Designed a user-friendly web app with encrypted Paystack payment integration, role-based access control, and data validations. Followed a user-centered approach to create an accessible and reliable electricity bill payment solution.",
       tech: ["#HTML", "#CSS", "#JavaScript", "PHP", "#Bootstrap"],
     },
     {
