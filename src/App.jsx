@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './App.css'
+
 import Hero from './components/Hero';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import StarsCanvas from './components/Stars';
 import Preloader from './components/Preloader';
+import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 

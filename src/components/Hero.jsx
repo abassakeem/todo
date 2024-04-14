@@ -19,10 +19,10 @@ export default function Hero() {
     </Tooltip>
   );
   return (
-    <div className="vh-100 hero-section-container">
-      <Container className=" d-flex justify-content-center align-items-center  ">
+    <div className="vh-100  hero-section-container">
+      <Container  className="g-0 m-0 p-0 d-flex justify-content-center align-items-center  ">
         <Row>
-          <Col xs={7}>
+          <Col xs={8}>
             <div className="left  text-center vh-100 d-flex flex-column justify-content-center align-items-center">
               <div className="hero-section-wrapper">
                 <p className="welcome-text"> Hi, I&apos;m</p>
@@ -39,7 +39,7 @@ export default function Hero() {
                     duration: 1,
                     delay: 1,
                   }}
-                  className="hero-text "
+                  className="hero-text text-center "
                 >
                   LANRE-ABASS AKEEM
                 </motion.p>
@@ -93,7 +93,7 @@ export default function Hero() {
               </div>
             </div>
           </Col>
-          <Col xs={5} className="m-0 p-0">
+          <Col xs={4} className="m-0 p-0">
             <div className="right">
               <Avatar />
             </div>

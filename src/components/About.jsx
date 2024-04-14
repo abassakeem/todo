@@ -74,13 +74,13 @@ export default function About() {
                     delay: 0.5,
                   }}
                 >
-                  <i className=" text-justify">
-                    "I am a computer science graduate from Babcock University,
+                 
+                    "I am a computer science graduate from,
                     with my primary focus being on frontend development using
                     React and Three.js. However, I also have a strong
                     fascination with Node.js, and the intricate world of cloud
                     engineering."
-                  </i>
+                
                 </motion.span>
                 <ul className="unordered d-flex flex-row mt-3 text-center">
                   <li className="">
@@ -102,7 +102,7 @@ export default function About() {
                       <BiLogoReact />
                     </motion.span>
 
-                    <p className="about-text text-secondary">
+                    <p className="about-text ">
                       <small>
                         Proficient in front-end technologies including React.js,
                         HTML, CSS, and Bootstrap, complemented by strong skills
@@ -129,7 +129,7 @@ export default function About() {
                       <FaNodeJs />
                     </motion.span>
 
-                    <p className="about-text text-secondary">
+                    <p className="about-text ">
                       <small>
                         Well-versed in back-end development with experience in
                         Node.js, PHP, and database optimization.
@@ -155,7 +155,7 @@ export default function About() {
                       <AiFillGithub />
                     </motion.span>
 
-                    <p className="about-text text-secondary">
+                    <p className="about-text ">
                       <small>
                         I have a strong background in using Git and GitHub for
                         continuous integration and deployment of software.

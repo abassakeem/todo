@@ -47,16 +47,16 @@ export default function Projects() {
         "I designed a landing page for 'getlink' which utilizes an API to retrieve the necessary data required for the registration process.",
       tech: ["#React", "#CSS", "#Bootstrap", "#Api"],
     },
-    {
-      index: 5,
-      title: "My Portfolio",
-      url: "https://wuwaabassportfolio.netlify.app/",
-      image: port,
-      git: "https://github.com/abassakeem/wuwaabassportfolio",
-      description:
-        "I designed a portfolio website inspired by Wuwa Sensei, incorporating Three.js for 3D elements, animations, and Framer Motion to create an immersive and visually captivating experience.",
-      tech: ["#React", "#CSS", "#TailwindCSS", "#Blender"],
-    },
+    // {
+    //   index: 5,
+    //   title: "My Portfolio",
+    //   url: "https://wuwaabassportfolio.netlify.app/",
+    //   image: port,
+    //   git: "https://github.com/abassakeem/wuwaabassportfolio",
+    //   description:
+    //     "I designed a portfolio website inspired by Wuwa Sensei, incorporating Three.js for 3D elements, animations, and Framer Motion to create an immersive and visually captivating experience.",
+    //   tech: ["#React", "#CSS", "#TailwindCSS", "#Blender"],
+    // },
 
     {
       index: 3,
@@ -154,7 +154,7 @@ export default function Projects() {
                   <Row className="d-flex flex-md-row flex-column-reverse">
                     <Col
                       md={6}
-                      className="d-flex justify-content-center align-items-center"
+                      className="d-flex project-words justify-content-center align-items-center"
                     >
                       <div className="project-left text-start">
                         <Carousel.Caption>
