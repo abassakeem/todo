@@ -40,7 +40,7 @@ export default function Projects() {
     {
       index: 4,
       title: "GetLinked",
-      url: "https://www.getlinkedd.netlify.app",
+      url: "https://getlinkedd.netlify.app/",
       image: getlinked,
       git: "https://github.com/abassakeem/getlinked",
       description:
