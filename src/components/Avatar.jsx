@@ -9,13 +9,13 @@ import CanvasLoader from './Loader'
 export default function Avatar() {
   return (
    
-<div className="vh-100 w-100 avatar-container ">
+<div className="vh-50  avatar-container ">
  
 <Canvas
 
       shadows
       dpr={[1, 2]}
-      camera={{ position: [1, 4.24, 8.9], fov: 22 }}
+      camera={{ position: [2.2, 5, 8.9], fov: 13 }}
       gl={{ preserveDrawingBuffer: true }}
      
 >

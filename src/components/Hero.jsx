@@ -19,11 +19,11 @@ export default function Hero() {
     </Tooltip>
   );
   return (
-    <div className="vh-100  hero-section-container">
-      <Container  className="g-0 m-0 p-0 d-flex justify-content-center align-items-center  ">
+    <div className="vh-100  hero-section-container d-flex justify-content-center align-items-center">
+      <Container  className="g-0 m-0 p-0 d-fl ex justify-content-center align-items-center  ">
         <Row>
-          <Col xs={7} md={8}>
-            <div className="left  text-center vh-100 d-flex flex-column justify-content-center align-items-center">
+          <Col xs={12} md={8} className="g-0 m-0 p-0">
+            <div className="left  text-center d-flex flex-column justify-content-center align-items-center">
               <div className="hero-section-wrapper">
                 <p className="welcome-text"> Hi, I&apos;m</p>
                 <motion.p
@@ -93,8 +93,8 @@ export default function Hero() {
               </div>
             </div>
           </Col>
-          <Col xs={5} md={4} className="m-0 p-0">
-            <div className="right">
+          <Col xs={12} md={4} className="m-0 p-0 gap-0 g-0">
+            <div className="right vh-50 ">
               <Avatar />
             </div>
           </Col>

@@ -164,8 +164,8 @@ export default function Projects() {
                           <div className="description text-start">
                             <p>{project.description}</p>
                           </div>
-                          <div className="git-view social-icon">
-                            <a rel="noreferrer" href={project.git} target="_blank">
+                          <div className="git-view social-icon d-flex align-items-center justify-content-center gap-5">
+                            <a rel="noreferrer" href={project.git} target="_blank" >
                               <AiFillGithub />
                             </a>
                             <a rel ="noreferrer" href={project.url} target="_blank">

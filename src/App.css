@@ -81,12 +81,13 @@ ul {
 }
 
 .social-icon a {
-  margin-right: 40px;
+ 
   font-weight: 900;
   color: #000;
   position: relative;
   cursor: pointer;
   font-size: 1.5em;
+  
 }
 
 .social-icon a::after {
@@ -118,6 +119,10 @@ ul {
 .avatar-container {
   cursor: pointer;
   z-index: 99999999;
+}
+
+.hero-section-container .right, canvas{
+
 }
 
 .canvas-loader {
@@ -465,7 +470,7 @@ background-color: #000;
 }
 
 .carousel-control-next {
-  right: calc(50% - 45px);
+  right: calc(50% - 65px);
   /* Adjust the right position for the next button */
 }
 .carousel-caption {
@@ -537,11 +542,13 @@ textarea {
 
 }
 
-
+.vh-50{
+  height: 50vh;
+}
 
 @media (max-width: 768px) {
   .hero-section-container{
-    height: 75vh !important;
+   
   }
   
     .navbar-link {
